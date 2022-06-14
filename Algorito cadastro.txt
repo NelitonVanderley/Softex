@@ -1,0 +1,34 @@
+nome caracter
+endereco caracter
+cidade caracter
+cpf inteiro
+rg inteiro
+idade inteiro
+nomedopai caracter
+nomedamae caracter
+peso real
+rendabruta real
+
+escreva("Olá! Vamos realizar seu cadastro. Para isso precisamos de algumas informações. Vamos lá?")
+escreva("Qual seu nome? ")
+leia (nome)
+escreva("Qual seu endereço? ")
+leia (endereco)
+escreva("Qual sua cidade? ")
+leia (cidade)
+escreva("Informe o número do seu CPF: ")
+leia (cpf)
+escreva("Informe seu RG: ")
+leia (rg)
+escreva("Qual sua idade? ")
+leia (idade)
+escreva("Qual o nome do seu pai? ")
+leia (nomedopai)
+escreva("Qual o nome da sua mãe? ")
+leia (nomedamae)
+escreva("Qual seu peso? ")
+leia (peso)
+escreva("Qual sua renda bruta mensal? ")
+leia (rendabruta)
+
+escreva("- Nome: ", nome, " - Endereço: ", endereco, " - Cidade: ", cidade, " - CPF: ", cpf, " - RG: ", rg, " - Idade: ", idade, " - Nome do pai: ", nomedopai," - Nome da mae ", nomedamae, " - Peso: ", peso, "- Renda Bruta: ", rendabruta)
