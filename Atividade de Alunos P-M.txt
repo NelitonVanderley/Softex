@@ -1,0 +1,1 @@
+As colunas e linhas se alternam contendo 4 letras mais 2 letras. Logo o professor consegue identificar o aluno que mudou de lugar, quando na penúltima linha e penúltima coluna não está seguindo a regra estabelecida (4 para 2).
