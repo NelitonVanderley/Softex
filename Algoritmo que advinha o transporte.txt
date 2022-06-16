@@ -1,0 +1,118 @@
+resposta: caracter
+resposta2: caracter
+resposta3: caracter
+resposta4: caracter
+resposta5: caracter
+Inicio
+   
+   escreva ("É um veículo terrestre?")
+   leia (resposta2)
+   se (resposta2 = "sim") entao
+      resposta <- "sim"
+   senao
+      resposta3 <- "nao"
+   fimse
+   se (resposta= "sim") entao
+      escreva ("tem pneu?")
+      leia (resposta)
+      se (resposta= "nao") entao
+         escreva ("TREM")
+         fimalgoritmo
+      senao
+         escreva ("é um transporte publico?")
+         leia (resposta)
+         se (resposta= "sim") entao
+            escreva ("ONIBUS")
+            fimalgoritmo
+         senao
+            escreva ("Transporta combustível?")
+            leia (resposta)
+            se (resposta= "sim") entao
+               escreva ("CAMINHÃO")
+               fimalgoritmo
+            senao
+               escreva("Locomove sem combustível?")
+               leia (resposta)
+               se (resposta= "sim") entao
+                  escreva ("BICICLETA")
+                  fimalgoritmo
+               senao
+                  escreva ("tem apenas duas rodas?")
+                  leia (resposta)
+                  se (resposta= "sim") entao
+                     escreva ("MOTO")
+                     fimalgoritmo
+                  senao
+                     escreva ("O veículo possui emplacamento? ")
+                     leia (resposta)
+                     se (resposta= "sim") entao
+                        escreva ("CARRO")
+                     senao
+                        escreva ("TRATOR")
+                        fimalgoritmo
+                     fimse
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+   escreva ("É um veículo aquático?")
+   leia (resposta4)
+   se (resposta4= "sim")então
+      resposta3 <- "sim"
+   senao
+      resposta5 <- "não"
+   fimse
+   se (resposta3= "sim") entao
+      escreva ("Anda sob a água?")
+      leia (resposta3)
+      se (resposta3= "sim") entao
+         escreva ("SUBMARINO")
+         fimalgoritmo
+      senao
+         escreva ("Pode transportar conteiner?")
+         leia (resposta3)
+         se (resposta3= "sim") entao
+            escreva("NAVIO")
+            fimalgoritmo
+         senao
+            escreva ("É usado para pescar?")
+            leia (resposta3)
+            se (resposta3= "sim") entao
+               escreva ("BARCO")
+            senao
+               escreva ("LANCHA")
+               fimalgoritmo
+            fimse
+         fimse
+      fimse
+   fimse
+   escreva ("tem motor?")
+   leia (resposta)
+   se (resposta= "sim") entao
+      resposta5 <- "sim"
+   senao
+      resposta2 <- "não"
+   fimse
+   se (resposta5= "sim") entao
+      escreva ("possui hélices")
+      leia (resposta5)
+      se (resposta5= "sim") entao
+         escreva ("HELICOPTERO")
+      senao
+         escreva ("AVIAO")
+         fimalgoritmo
+      fimse
+   fimse
+   escreva ("Utiliza ar quente para subir?")
+   leia (resposta)
+   se (resposta= "sim") entao
+      escreva ("BALAO")
+   senao
+      escreva ("PARAQUEDAS")
+   fimse
+Fimalgoritmo
+
+
+
