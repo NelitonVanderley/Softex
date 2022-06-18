@@ -68,4 +68,4 @@ EscrevaL( "turma C : ", turmaC, " !  - Melhor Aluno foi ", melhoralunoC, " com a
 EscrevaL( "turma D : ", turmaD, " !  - Melhor Aluno foi ", melhoralunoD, " com a nota ", maiornotaD, " !")
 EscrevaL("Quantidade total de alunos Aprovados: ", numAprovados, " !")
 EscrevaL("O Melhor aluno(a) é ", melhorAluno, ", da turma ",turmaMelhorAluno ,", com a nota ", maiornota, " !")
-FimalgoritmO
+Fimalgoritmo

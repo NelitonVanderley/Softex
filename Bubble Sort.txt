@@ -1,0 +1,31 @@
+int main() {
+  #define TAM 10
+  int elementos[TAM];
+  int i, auxiliar, contador;
+
+  printf("Informe 10 números para serem ordenados: \n");    for (i = 0; i < TAM; i++){
+    scanf("%d", &elementos[i]);
+
+  }
+  printf("Ordem digitada dos números: \n");
+  for (i = 0; i < TAM; i++) {
+    printf("%2d", elementos[i]);
+       
+  }
+
+  //Bubble Sort
+  for(contador = 1; contador < TAM; contador++){
+    for(i = 0; i < TAM - 1; i++){
+      if (elementos[i] > elementos[i+1]){
+        auxiliar = elementos[i];
+        elementos[i] = elementos[i+1]; 
+        elementos[i+1] = auxiliar;
+      }
+    }  
+  }
+  printf("\n");
+  printf("Os números digitados foram ordenados:\n");
+  for (i = 0; i < TAM; i++){
+    printf("%4d", elementos[i] );  
+    }
+}
