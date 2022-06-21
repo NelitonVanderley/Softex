@@ -1,0 +1,7 @@
+int main (){
+int *vet;
+
+vet = malloc(1*sizeof(int));
+vet = (int*) realloc(vet, 22* sizeof(int)
+free(): void free(void *vet)
+}
