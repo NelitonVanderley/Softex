@@ -1,0 +1,38 @@
+//InsertionSort - Algorítmo
+#include <stdio.h>
+
+int main()
+{
+  int n, array[30], c, d, atual, flag = 0;
+  n = 30;
+
+  printf("Informe %d números ímpares\n", n);
+  
+
+  for (c = 0; c < n; c++)
+    scanf("%d", &array[c]);
+   
+
+  for (c = 1 ; c <= n - 1; c++) {
+    atual = array[c];
+
+    for (d = c - 1 ; d >= 0; d--) {
+      if (array[d] > atual) {
+        array[d+1] = array[d];
+        flag = 1;
+      }
+      else
+        break;
+    }
+    if (flag)
+      array[d+1] = atual;
+  }
+
+  printf("Lista em ordem crescente:\n");
+
+  for (c = 0; c <= n - 1; c++) {
+    printf("%d\n", array[c]);
+  }
+
+  return 0;
+}
