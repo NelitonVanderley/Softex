@@ -1,0 +1,32 @@
+Pesquisa sobre Grafos
+
+Grafos são estruturas que permitem codificar relacionamentos entre pares de objetos, que podemos chamar de vértices do grafo, e os relacionamentos são suas arestas.
+
+Não é obrigatório que todos os vértices tenham arestas, apenas terá arestas se houver relacionamento entre os objetos.
+
+Os grafos podem ser direcionados ou não direcionados:
+
+Direcionados
+Pares ordenados de vértices. As arestas possuem sentido de direção, não existindo ida e volta de relação entre os vértices. Nos grafos direcionados pode haver selfloop.
+
+Não direcionados
+As arestas não possuem sentido definido, apenas informam que possui relação. Selfloop não são permitidos.
+
+Caminho é uma sequência de vértices de percorridos de um ponto a outro do grafo. O cumprimento do caminho corresponde a quantidade de arestas que são percorridas.
+
+Grafo Conexo
+
+Todos os elementos (vértices) tem arestas, não existe vértice sem relacionamento.
+
+
+Fortemente conexo
+
+Existem caminhos para voltar para voltar para o vértice de saída, por exemplo.
+
+Fracamente conexo
+Não consegue conectar todos os elementos 
+
+Como os grafos podem ser utilizados no contexto tecnológico?
+
+1-  Os grafos podem ser utilizados por exemplo nas conexões de uma rede social, onde cada usuário é um vértice e as conexões são as arestas.
+2-  Os grafos também podem ser utilizados nos bancos de dados criando os bancos de dados de grafos que foram criados para possibilitar o armazenamento de relacionamentos e a navegação por eles.
