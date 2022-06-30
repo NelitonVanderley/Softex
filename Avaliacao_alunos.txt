@@ -1,0 +1,24 @@
+#Solicitação das informações
+
+aluno = input('Informe o nome do aluno (a): ')
+nota1 = float(input('Informe a primeira nota do aluno (a) ' + aluno + " : "))
+nota2 = float(input('Informe a segunda nota do aluno (a) ' + aluno + " : "))
+faltas = int(input('Informe a quantidade de faltas de ' + aluno + ' : '))
+
+
+#Calculo da Média
+
+media = (nota1 + nota2)/2
+
+
+#Validação de Faltas
+if faltas > 3:
+  faltas = str(faltas)
+  print('Aluno (a) ' + aluno + ' foi reprovado (a)! Aluno (a) possui ' + faltas + ' faltas.') 
+else:
+
+#Validação de nota
+
+  if media  < 7:
+    print('Aluno (a) ' + aluno + ' foi reprovado (a)!')
+  else: print('Aluno (a) ' + aluno + ' foi Aprovado (a)!')
