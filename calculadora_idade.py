@@ -3,8 +3,8 @@
 def calculadora_idade (nome, ano_nasc):
 	ano_atual = 2022
 	idade = ano_atual - ano_nasc
-	resposta = '{} em 2022 você fez ou fará {} anos.'.format(nome, idade)
-	return resposta
+	idade = '{} em 2022 você fez ou fará {} anos.'.format(nome, idade)
+	return idade
 	
 nome = str(input('Informe seu nome completo: '))
 erro = True
