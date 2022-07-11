@@ -26,8 +26,17 @@ while finalizar == False:
 		finalizar = False
 	elif finalizar == 1:
 		if x > y and x > z:
-			print('O vencedor foi o cadidado X com '+ str(x) + 'votos!')
+			print('O vencedor foi o cadidado X com '+ str(x) + ' votos!')
 			print('Votos Candidato Y '+ str(y))
 			print('Votos Candidato Z '+ str(z))
 			print('Votos Brancos e Nulos '+ str(branco+nulo))
-			
+		elif y > x and y > z:
+			print('O vencedor foi o cadidado Y com '+ str(y) + ' votos!')
+			print('Votos Candidato X '+ str(x))
+			print('Votos Candidato Z '+ str(z))
+			print('Votos Brancos e Nulos '+ str(branco+nulo)),
+		elif z > x and z > y:
+			print('O vencedor foi o cadidado Z com '+ str(z) + ' votos!')
+			print('Votos Candidato X '+ str(x))
+			print('Votos Candidato Z '+ str(z))
+			print('Votos Brancos e Nulos '+ str(branco+nulo))
