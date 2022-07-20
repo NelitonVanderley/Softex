@@ -1,0 +1,25 @@
+Classifique dois objetos materiais e dois abstratos. Insira, no mínimo, três métodos e três atributos para cada.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.  
+
+
+
+## Objetos Materiais
+
+Objeto 1 : Calculadora
+Metodos: Somar, subtrair, multiplicar e dividir
+Atributos: Cor, modelo e tamanho.
+
+Objeto 2 : Lanterna
+Métodos: Ligar, desligar, piscar.
+Atributos: Cor, tamanho, bateria, alcance.
+
+## Objetos Abstratos:
+
+Objeto 1 : Conta bancária
+Métodos: Depósitar, sacar, verificar saldo
+Atributos: PF, PJ, limite de movimentação, saldo.
+
+Objeto 2 : Música
+Métodos: Escutar, cantar, compor
+Atributos: Compositor, ritmo, notas, letra
