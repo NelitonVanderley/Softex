@@ -1,1 +1,35 @@
 Padrões de projetos
+Os padrões de projeto (design patterns) são como plantas pré-projetadas de uma construção, que você pode alterar para se adequar melhor na resolução de um problema recorrente em seu código. O que diferencia os padrões de projeto das funções e bibliotecas é que você não pode simplesmente copiá-los direto para seu programa, já que eles não são um pedaço de código, mas sim um conceito que serve como uma solução.
+
+Assim, para se implementar um padrão de projeto você deve seguir o conceito dos padrões escolhidos (dentre todos os existentes) e ajustá-lo ao problema que deseja resolver. Isso dependerá das características do projeto. Dessa forma, fazemos uma implementação que se encaixe exatamente à demanda da nossa aplicação.
+
+Padrões de criação
+Os padrões de criação são aqueles que abstraem e ou adiam o processo criação dos objetos. Eles ajudam a tornar um sistema independentemente de como seus objetos são criados, compostos e representados. Um padrão de criação de classe usa a herança para variar a classe que é instanciada, enquanto um padrão de criação de objeto delegará a instanciação para outro objeto.
+
+Os padrões de criação tornam-se importantes à medida que os sistemas evoluem no sentido de dependerem mais da composição de objetos do que a herança de classes. O desenvolvimento baseado na composição de objetos possibilita que os objetos sejam compostos sem a necessidade de expor o seu interior como acontece na herança de classe, o que possibilita a definição do comportamento dinamicamente e a ênfase desloca-se da codificação de maneira rígida de um conjunto fixo de comportamentos, para a definição de um conjunto menor de comportamentos que podem ser compostos em qualquer número para definir comportamentos mais complexos.
+
+Há dois temas recorrentes nesses padrões. Primeiro todos encapsulam conhecimento sobre quais classes concretas são usadas pelo sistema. Segundo ocultam o modo como essas classes são criadas e montadas. Tudo que o sistema sabe no geral sobre os objetos é que suas classes são definidas por classes abstratas. Consequentemente, os padrões de criação dão muita flexibilidade no que é criado, quem cria, como e quando é criado. Eles permitem configurar um sistema com objetos “produto” que variam amplamente em estrutura e funcionalidade. A configuração pode ser estática (isto é, especificada em tempo de compilação) ou dinâmica (em tempo de execução).
+
+
+Builder
+Builder é um padrão de projeto de software criacional que permite a separação da construção de um objeto complexo da sua representação, de forma que o mesmo processo de construção possa criar diferentes representações.
+
+Estrutura
+
+O padrão Builder, da forma como foi descrito no livro Design Patterns: Elements of Reusable Object-Oriented Software, contém os seguintes elementos:
+
+director — constrói um objeto utilizando a interface do builder;
+builder — especifica uma interface para um construtor de partes do objeto-produto;
+concrete builder — define uma implementação da interface builder, mantém a representação que cria e fornece interface para recuperação do produto;
+product — o objeto complexo acabado de construir. Inclui classes que definem as partes constituintes.
+Utilização
+O padrão Builder pode ser utilizado em uma aplicação que converte o formato de texto RTF para uma série de outros formatos e que permite a inclusão de suporte para conversão para outros formatos, sem a alteração do código fonte do leitor de RTF.
+
+A implementação da solução para esse problema pode ser realizada através de uma classe de leitura (director) associada a uma classe capaz de converter o formato RTF para outra representação (builder). O objeto da classe de leitura lê cada token do texto e executa o método apropriado no objeto de conversão, de acordo com tipo do token. A classe de conversão possui um método para cada tipo de token, incluindo os caracteres comuns, parágrafos, fontes e etc. Para cada formato de texto suportado é criada uma classe de conversão especializada (concrete builder). Um conversor para formato ASCII, por exemplo, poderia ignorar qualquer requisição para converter tokens que não fossem caracteres comuns. Um conversor para o formato PDF, por outro lado, iria processar qualquer requisição para poder converter o estilo, além do texto.
+
+Vantagens
+Permite variar a representação interna de um produto;
+Encapsula o código entre construção e representação;
+Provê controle durante o processo de construção.
+Desvantagens
+Requer criar um concrete builder específico para cada instância diferente do produto.
