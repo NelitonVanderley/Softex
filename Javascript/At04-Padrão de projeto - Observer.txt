@@ -1,0 +1,20 @@
+Desing Patterns - Padrão de Projetos
+
+Observer
+
+O Observer faz parte da categoria comportamental e é um pardrão de comunicação entre objetos utilizado quando precisamos estar cientes de alterações em outro objeto.
+Quando um objeto muda de estado, todos os outros podem ser notificados automaticamente.
+Dessa forma ele define uma dependência de um para muitos objetos para quando um objeto mudar de estado todos os seus dependentes sejam notificados e atualizados automaticamente.
+Por exemplo, quando recebemos notificações de alguma rede social, que ao receber alguma novidade de um usuário, notifica os demais usuários.
+
+O observer é implementado com dois tipos de objetos: os observaveis e os observadores. Os objetos observáveis possuem uma referência para os seus observadores. Isso torna possível adicionar, remover e notificar todos os seus observadores.
+
+Ponto positivo:
+Facilita a comunicação entre objetos em tempo de execução
+
+Ponto negativo:
+Pode se tornar complexo manter a ordeem em qua as notificações são enviadas.
+
+Referências:
+https://www.youtube.com/watch?v=qjvKY1pk2dU
+https://www.youtube.com/watch?v=ioYkXh8NhKc
